@@ -52,7 +52,7 @@ class table_book_video extends discuz_table
 
     public function insert($name, $teacherId, $year, $month, $imgFileName, $videoFileName, $content,
                            $return_insert_id = false, $replace = false, $silent = false) {
-        $query = DB::query('select * from '.DB::table('book_video').' where year='.$year.' and month='.$month);
+        //$query = DB::query('select * from '.DB::table('book_video').' where year='.$year.' and month='.$month);
         //if(DB::num_rows($query) > 0) {
         //    return "您选择的年份和月份已经上传过视频，只能修改！";
         //} else {
@@ -68,10 +68,10 @@ class table_book_video extends discuz_table
                 'content' => $content,
                 'uploadTime' => $time,
                 'updateTime' => $time
-            //);
+            );
             DB::insert($this->_table, $setarr, $return_insert_id, $replace, $silent);
             return "上传视频成功！";
-        }
+        //}
     }
 
     public function update($id, $name, $teacherId, $year, $month, $imgFileName, $videoFileName, $content, $uploadTime) {

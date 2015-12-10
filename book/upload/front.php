@@ -47,15 +47,14 @@ $lastVideo = C::t('book_video')->queryLastVideo();
     <link href="static/book/css/app.css" rel="stylesheet">
     <style>
         .header {
-            
             padding: 0px;
             margin-bottom: 20px;
             text-align: left;
-            min-height: 100px;
+            min-height: 360px;
             position: relative;
         }
         .mySelect {
-            background-color: #3071A9;
+            background-color: #208cca;
         }
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,10 +67,11 @@ $lastVideo = C::t('book_video')->queryLastVideo();
 </head>
 
 <body class="home-template">
-<div class="header"style="width:100%;height:100px;">
-	<img src="static/book/images/header.jpg" style="height:100%;width:45%;" />
+<div class="header">
+	<img src="static/book/images/header.jpg" style="width:100%"/>
 </div>
 <div class="container projects">
+    <!--
     <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-4 ">
             <div class="thumbnail">
@@ -105,7 +105,8 @@ $lastVideo = C::t('book_video')->queryLastVideo();
             </div>
         </div>
     </div>
-    <div style="background-color:#3071A9;padding:1px 1px 1px 5px;margin-bottom: 5px;">
+    -->
+    <div style="padding:1px 1px 1px 5px;margin-bottom: 5px;">
         <form class="form-horizontal" id="form" role="form"  method="POST" autocomplete="off" action="">
             <h3>
                 <select class="mySelect" name="selectedYear" id="selectedYear">
@@ -114,7 +115,7 @@ $lastVideo = C::t('book_video')->queryLastVideo();
                     <option>2016</option>
                     <option>2017</option>
                     <option>2018</option>
-                </select>年度书友会召集令
+                </select>年度活动视频
             </h3>
         </form>
 
