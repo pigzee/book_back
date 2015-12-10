@@ -24,13 +24,8 @@ $video = C::t('book_video')->query_by_videoId($videoId);
             padding: 0px;
             margin-bottom: 20px;
             text-align: left;
-            min-height: 100px;
+            min-height: 360px;
             position: relative;
-			width:100%;
-			height:100px;
-        }
-        .mySelect {
-            background-color: #3071A9;
         }
     </style>
 	
@@ -45,7 +40,7 @@ $video = C::t('book_video')->query_by_videoId($videoId);
 
 <body class="home-template">
     <div class="header">
-		<img src="static/book/images/header.jpg" style="height:100%;width:45%;" />
+        <img src="static/book/images/header.jpg" style="width:100%"/>
     </div>
     <div class="container projects">
         <div class="row">
